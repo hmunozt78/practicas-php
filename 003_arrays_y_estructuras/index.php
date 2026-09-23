@@ -24,6 +24,11 @@
             "titulo" => "003 - Arrays y Estructuras",
             "lenguaje" => "PHP 8.5",
             "estado" => "En Proceso"
+        ],
+        [
+            "titulo" => "004 - Formularios y Post",
+            "lenguaje" => "PHP 8.5 y HTML5",
+            "estado" => "Pendiente"
         ]
     ];
 ?>
@@ -40,6 +45,7 @@
         .badge { background: #0288d1; color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; }
         .completado { background: #2e7d32; }
         .proceso { background: #ed6c02; }
+        .pendiente { background: #d84867ef; }
         ul { list-style: none; padding: 0; }
         li { padding: 0.8rem; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; }
     </style>
@@ -72,6 +78,9 @@
                     <!-- Condicional para cambiar la clase CSS según el estado -->
                     <?php if ($proyecto["estado"] === "Completado"): ?>
                         <span class="badge completado">Completado</span>
+                    <?php elseif ($proyecto["estado"] === "Pendiente"): ?>
+                        
+                        <span class="badge pendiente">Pendiente</span>
                     <?php else: ?>
                         <span class="badge proceso">En proceso</span>
                     <?php endif; ?>
