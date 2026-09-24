@@ -42,6 +42,14 @@ $proyectos = [
         "descripcion" => "Gestión del estado de usuario con $_SESSION, login ficticio y protección de rutas.",
         "carpeta" => "005_sesiones_y_auth",
         "tecnologias" => ["$_SESSION", "Auth", "PHP Security"],
+        "estado" => "Completado"
+    ],
+     [
+        "id" => "006",
+        "titulo" => "006 - Bases de Datos con PDO & MySQL",
+        "descripcion" => "Conexión segura a MariaDB mediante PDO, creación de tablas, inserción (INSERT) y consulta de datos (SELECT).",
+        "carpeta" => "006_bases_de_datos_pdo",
+        "tecnologias" => ["PHP PDO", "MySQL/MariaDB", "SQL"],
         "estado" => "Próximamente"
     ]
 ];
