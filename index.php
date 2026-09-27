@@ -50,7 +50,7 @@ $proyectos = [
         "descripcion" => "Conexión segura a MariaDB mediante PDO, creación de tablas, inserción (INSERT) y consulta de datos (SELECT).",
         "carpeta" => "006_bases_de_datos_pdo",
         "tecnologias" => ["PHP PDO", "MySQL/MariaDB", "SQL"],
-        "estado" => "Próximamente"
+        "estado" => "Completado"
     ]
 ];
 ?>
