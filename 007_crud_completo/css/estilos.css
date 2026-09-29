@@ -1,0 +1,130 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 2rem 1rem;
+    color: #1e293b;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #01579b;
+}
+
+.alerta-exito {
+    background-color: #dcfce7;
+    border-left: 4px solid #16a34a;
+    color: #15803d;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.alerta-error {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    color: #991b1b;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+}
+
+/* Botones de Acciones en la Tabla */
+.acciones {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.enlace-editar {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-eliminar {
+    color: #e11d48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-editar:hover, .enlace-eliminar:hover {
+    text-decoration: underline;
+}
+
+/* Botón de Cancelar Edición */
+.btn-cancelar {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-cancelar:hover {
+    color: #1e293b;
+}
+
+.btn-actualizar {
+    background-color: #16a34a !important;
+}
+
+.btn-actualizar:hover {
+    background-color: #15803d !important;
+}

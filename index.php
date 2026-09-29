@@ -51,6 +51,14 @@ $proyectos = [
         "carpeta" => "006_bases_de_datos_pdo",
         "tecnologias" => ["PHP PDO", "MySQL/MariaDB", "SQL"],
         "estado" => "Completado"
+    ],
+    [
+        "id" => "007",
+        "titulo" => "007 - CRUD Completo con PDO",
+        "descripcion" => "Operaciones complejas en MariaDB: Crear, Leer, Editar (UPDATE) y Eliminar (DELETE) registros usando PDO y parámetros GET.",
+        "carpeta" => "007_crud_completo",
+        "tecnologias" => ["PHP PDO", "MariaDB", "SQL", "CRUD"],
+        "estado" => "En Progreso"
     ]
 ];
 ?>
