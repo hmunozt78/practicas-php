@@ -58,6 +58,14 @@ $proyectos = [
         "descripcion" => "Operaciones complejas en MariaDB: Crear, Leer, Editar (UPDATE) y Eliminar (DELETE) registros usando PDO y parámetros GET.",
         "carpeta" => "007_crud_completo",
         "tecnologias" => ["PHP PDO", "MariaDB", "SQL", "CRUD"],
+        "estado" => "Completado"
+    ],
+    [
+        "id" => "008",
+        "titulo" => "008 - POO & Clases de Base de Datos",
+        "descripcion" => "Modelado orientado a objetos en PHP: Encapsulamiento de conexiones PDO y métodos CRUD en clases reutilizables.",
+        "carpeta" => "008_poo_db",
+        "tecnologias" => ["PHP POO", "PDO", "Classes", "MariaDB"],
         "estado" => "En Progreso"
     ]
 ];
