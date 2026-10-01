@@ -23,6 +23,12 @@ if (!isset($_SESSION['usuario_id'])) {
     
     <p>Acceso concedido a la zona protegida mediante sesiones de PHP nativo y POO.</p>
 
+    <p>Opciones de cuenta:</p>
+        <ul>
+            <li><a href="cambiar_password.php">Cambiar Contraseña</a></li>
+            <li><a href="logout.php">Cerrar Sesión</a></li>
+        </ul>
+
     <a href="logout.php">Cerrar Sesión</a>
 </body>
 </html>

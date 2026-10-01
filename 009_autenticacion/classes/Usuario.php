@@ -94,4 +94,32 @@ class Usuario {
 
         return false;
     }
+
+    // UPDATE: Cambiar la contraseña del usuario autenticado
+    public function cambiarPassword($id, $passwordActual, $passwordNueva) {
+        // 1. Obtener el hash actual desde MariaDB
+        $sql = "SELECT password FROM usuarios_mod09 WHERE id = :id LIMIT 1";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute([':id' => $id]);
+        $usuario = $stmt->fetch();
+
+        if (!$usuario) {
+            return false;
+        }
+
+        // 2. Validar que la contraseña actual ingresada coincida con el hash
+        if (!password_verify($passwordActual, $usuario['password'])) {
+            return false; // Contraseña actual incorrecta
+        }
+
+        // 3. Generar el nuevo hash y actualizar la base de datos
+        $nuevoHash = password_hash($passwordNueva, PASSWORD_BCRYPT);
+        $updateSql = "UPDATE usuarios_mod09 SET password = :password WHERE id = :id";
+        $updateStmt = $this->db->prepare($updateSql);
+
+        return $updateStmt->execute([
+            ':password' => $nuevoHash,
+            ':id'       => $id
+        ]);
+    }
 }
