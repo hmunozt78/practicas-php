@@ -66,6 +66,22 @@ $proyectos = [
         "descripcion" => "Modelado orientado a objetos en PHP: Encapsulamiento de conexiones PDO y métodos CRUD en clases reutilizables.",
         "carpeta" => "008_poo_db",
         "tecnologias" => ["PHP POO", "PDO", "Classes", "MariaDB"],
+        "estado" => "Completado"
+    ],
+     [
+        "id" => "009",
+        "titulo" => "009 - Autenticación y Sesiones POO",
+        "descripcion" => "Registro con password_hash(), autenticación con password_verify(), control de sesiones y cambio de contraseña.",
+        "carpeta" => "009_autenticacion",
+        "tecnologias" => ["PHP POO", "Sessions", "BCRYPT", "MariaDB"],
+        "estado" => "Completado"
+    ],
+    [
+        "id" => "010",
+        "titulo" => "010 - Middleware & Control de Acceso (RBAC)",
+        "descripcion" => "Protección de rutas centralizada, roles de usuario (admin/editor) y seguridad contra ataques CSRF/XSS.",
+        "carpeta" => "010_middleware_rbac",
+        "tecnologias" => ["Middleware", "RBAC", "CSRF", "Security"],
         "estado" => "En Progreso"
     ]
 ];
